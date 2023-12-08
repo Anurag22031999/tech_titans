@@ -12,9 +12,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background.jpg') no-repeat;
+    background-image:url("download.jpeg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    
 }
 
 header {
@@ -22,15 +24,22 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+    
 }
 
+    h2{
+        text-align: center;
+        font-family: Poppins;
+    }
+
 .logo {
-     font-size: 2em;
+     font-size: 1em;
      color: #fff;
      user-select: none;
 }
@@ -42,6 +51,8 @@ header {
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
+    
+    
 }
 
 .navigation a::after {
@@ -56,6 +67,7 @@ header {
     transform-origin: right;
     transform: scaleX(0);
     transition: transform .5s;
+    
 
 }
 .navigation a:hover::after {
@@ -63,7 +75,7 @@ header {
     transform: scaleX(1);
 }
 
-.navigation  .btnlogin-popup {
+.navigation .btnLogin-popup {
     width: 130px; 
     height: 50px;
     background: transparent;
@@ -78,12 +90,13 @@ header {
     transition: .5s;
 }
 
-.navigation  .btnlogin-popup:hover {
+.navigation  .btnLogin-popup:hover {
     background: #fff;
     color: #162938;
 }
 
 .wrapper {
+
     position: relative;
     width: 400px;
     height: 440px;
@@ -109,11 +122,13 @@ header {
 .wrapper .form-box {
     width: 100%;
     padding: 40px;
+
 }
 
 .wrapper .form-box.login {
    transition: transform .18s ease;
    transform: translateX(0);
+   
 }
 
 .wrapper.active .form-box.login{
@@ -176,10 +191,10 @@ header {
 
 .input-box input:focus~label,
 .input-box input:valid~label {
-    top: -8px;
+    top: -5px;
 }
 
-.input-box input {
+.input-box  input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -199,7 +214,7 @@ header {
     line-height: 57px;
 }
 
-.remember-forgot {
+.remember-forgot{
     font-size: .9em;
     color: #162938;
     font-weight: 500;
